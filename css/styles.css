@@ -23,6 +23,8 @@
 	8. EDUCATION SECTION
 	9. COUNTER SECTION
 	10. FOOTER
+	11. SKILLS SECTION
+
 
 ====================================================
 
@@ -82,7 +84,7 @@ b.max-bold{ font-weight: 700; }
 2. COMMONS FOR PAGE DESIGN
 --------------------------------- */
 
-.section{ padding: 100px 0 50px; }
+.section{ padding: 0px 0 0px; }
 
 .section .heading{ margin-bottom: 60px; }
 
@@ -260,3 +262,8 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 
 .copyright{ text-align: center; padding: 30px 0; background: #28023D; }
 
+/* ---------------------------------
+11. SKILLS SECTION
+--------------------------------- */
+.skills-section .expert{ margin-top: 10px; display: inline-block; padding: 1px 25px 0;
+	border-radius: 5px; background: #FFAB00; color: #fff; }
