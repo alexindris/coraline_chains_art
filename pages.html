@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="css/material-photo-gallery.css">
+<link rel="script" href="js/material-photo-gallery.js">
+<div class="m-p-g">
+<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+    <img src="img/p1.jpg" data-full="img/p1.jpg" class="m-p-g__thumbs-img" />
+    <img src="img/p2.jpg" data-full="img/p1.jpg" class="m-p-g__thumbs-img" />
+    <img src="img/p3.jpg" data-full="img/p1.jpg" class="m-p-g__thumbs-img" />
+</div>
+
+<div class="m-p-g__fullscreen"></div>
+</div>
+
+<script>
+    MaterialPhotoGallery
+    var elem = document.querySelector('.m-p-g');
+    document.addEventListener('DOMContentLoaded', function() {
+        var gallery = new MaterialPhotoGallery(elem);
+    });
+</script>
