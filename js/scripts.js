@@ -9,7 +9,7 @@
 	enableLineProgress();
 	
 	// RADIAL PROGRESS BAR
-	enableRadialProgress();
+	//enableRadialProgress();
 	
 	// ACCORDIAN
 	panelAccordian();
