@@ -128,7 +128,11 @@ $(document).ready(function(){
             columnWidth: ".all"
           }
         })
-  };
+      $grid.isotope({
+          filter: ".destacados"
+      })
+  }
+
 
 
 
