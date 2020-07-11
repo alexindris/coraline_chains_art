@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lightbox Gallery</title>
+    <link rel="stylesheet" type="text/css" href="../css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <script src="../js/lightbox-plus-jquery.js">
+    </script>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h2 {
+            color: green;
+        }
+
+        .gallery {
+            margin: 10px 40px;
+        }
+
+        .gallery img {
+            transition: 1s;
+            padding: 5px;
+        }
+
+        .gallery img:hover {
+            filter: drop-shadow(4px 4px 6px gray);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+<br>
+<h1>TITULO?</h1>
+<br>
+<div class=" col-lg-8 mx-auto  ">
+<div class="gallery row">
+    <div class="col-lg-4 col-md-12 mb-4">
+    <a href= "P1/1.jpg"
+       data-lightbox="mygallery">
+        <img src= "P1/1.jpg" class="img-fluid mb-4">
+    </a>
+    <a href="P1/4.jpg"
+       data-lightbox="mygallery">
+        <img src= "P1/4.jpg" class="img-fluid mb-4">
+    </a>
+    </div>
+    <div class="col-lg-4 col-md-12 mb-4">
+    <a href="P1/2.jpg"
+       data-lightbox="mygallery">
+        <img src= "P1/2.jpg" class="img-fluid mb-4">
+    </a>
+        <a href= "P1/5.jpg"
+           data-lightbox="mygallery">
+            <img src= "P1/5.jpg" class="img-fluid mb-4">
+        </a>
+    </div>
+    <div class="col-lg-4 col-md-12 mb-4">
+        <a href="P1/3.jpg"
+       data-lightbox="mygallery">
+        <img src= "P1/3.jpg" class="img-fluid mb-4">
+    </a>
+    </div>
+
+
+</div>
+</div>
+</body>
+<script>
+    lightbox.option({
+        alwaysShowNavOnTouchDevices : true,
+        disableScrolling : true
+    })
+</script>
+
+</html>
