@@ -1,61 +1,11 @@
 
 (function ($) {
 
-    "use strict";
 	
 	
 
 	// LINE PROGRESS BAR
 	enableLineProgress();
-	
-	// RADIAL PROGRESS BAR
-	//enableRadialProgress();
-	
-	// ACCORDIAN
-	panelAccordian();
-
-	$(window).on('load', function(){
-		
-		// ISOTOPE PORTFOLIO WITH FILTER
-		if(isExists('.portfolioContainer')){
-			var $container = $('.portfolioContainer');
-			$container.isotope({
-				filter: '*',
-				animationOptions: {
-					duration: 750,
-					easing: 'linear',
-					queue: false
-				}
-			});
-		 
-			$('.portfolioFilter a').click(function(){
-				$('.portfolioFilter .current').removeClass('current');
-				$(this).addClass('current');
-		 
-				var selector = $(this).attr('data-filter');
-				$container.isotope({
-					filter: selector,
-					animationOptions: {
-						duration: 750,
-						easing: 'linear',
-						queue: false
-					}
-				 });
-				 return false;
-			}); 
-		}
-	
-	});
-	
-	
-	$('a[href="#"]').on('click', function(event){
-		return;
-	});
-	
-	
-	if ( $.isFunction($.fn.fluidbox) ) {
-		$('a').fluidbox();
-	}
 	
 	var countCounterUp = 0;
 	
@@ -94,7 +44,7 @@ function enableLineProgress(){
 			strokeWidth: 1,
 			easing: 'easeInOut',
 			duration: 1400,
-			color: '#FEAE01',
+			color: '#b56a8c',
 			trailColor: '#eee',
 			trailWidth: 1,
 			svgStyle: {width: '100%', height: '100%'},
